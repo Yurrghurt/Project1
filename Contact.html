@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <style>
+        body {
+            display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2c2c2c;
+            margin: 0;
+            padding: 0;
+        }
+        .site {
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 79%;
+            padding: 20px;
+            border-left: 1px solid #444;
+            background-color: #3a3a3a;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            margin-right: 17%;
+            color: #dcdcdc;
+            overflow-y: auto;
+        }
+        .site h1 {
+            color: #fecdff;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        .form-group label {
+            display: block;
+            color: #dcdcdc;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            color: #dcdcdc;
+            font-size: 16px;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: 2px solid #61dafb;
+        }
+        #submit {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #61dafb;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #submit:hover {
+            background-color: #21a1f1;
+        }
+        .nav {
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            padding: 20px;
+            border-left: 1px solid #444;
+            background-color: #3a3a3a;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+        }
+        .nav a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #dcdcdc;
+            transition: color 0.3s;
+            font-size: 150%;
+        }
+        .nav a:hover {
+            color: #fecdff;
+            text-decoration: underline;
+        }
+        #footer1, #footer2 {
+            font-size: larger;
+            text-align: center;
+        }
+        #footer1 a, #footer2 a {
+            color: lightblue;
+            text-decoration: none;
+        }
+        #footer3 {
+            font-size: larger;
+            text-align: center;
+            color: white;}
+    </style>
+</head>
+<body>
+
+<div class="site">
+    <h1>Kontakt</h1>
+    <p>Wir freuen uns, von Ihnen zu hören! Nutzen Sie das folgende Formular, um uns eine Nachricht zu senden.</p>
+
+    <form action="contactMessage" method="POST">
+        <div class="form-group">
+            <label for="name">Ihr Name:</label>
+            <input type="text" id="name" name="nameVar" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Ihre E-Mail-Adresse:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Ihre Nachricht:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" id="submit">Nachricht senden</button>
+
+        <footer id="footer1">
+            <p><a href="/dataProt">Datenschutz</a></p>
+        </footer>
+
+        <footer id="footer2">
+            <p><a href="/termsOfUse">Nutzungsbedingungen</a></p>
+        </footer>
+
+        <footer id="footer3">
+            <p>Der KI-Tutor ist ein Projekt von 3HTL Waidhofen Schülern um das Lernen für jeden zu erleichtern</p>
+        </footer>
+    </form>
+</div>
+
+<div class="nav">
+    <img src="goofy.png" alt="logo" style="clip-path: inset(5px 5px 5px 5px round 20px); width: 99%; border-radius: 10%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); margin-bottom: 1px;">
+    <a href="/tutor"><button style="font-size: 130%;">TutorBot</button></a>
+    <a href="/homepage">Homepage</a>
+    <a href="/help">Help</a>
+    <a href="/aboutUs">About Us</a>
+    <a href="/contact">Contact</a>
+</div>
+
+
+</body>
+</html>

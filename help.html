@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wie funktioniert's?</title>
+    <style>
+        body {
+            display: flex;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2c2c2c;
+            margin: 0;
+            padding: 0;
+        }
+        .site {
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 79%;
+            padding: 20px;
+            border-left: 1px solid #444;
+            background-color: #3a3a3a;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+            margin-right: 17%;
+            color: #dcdcdc;
+            overflow-y: auto;
+        }
+        .nav {
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            padding: 20px;
+            border-left: 1px solid #444;
+            background-color: #3a3a3a;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+        }
+        .nav h3 {
+            color: #dcdcdc;
+        }
+        .nav a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #dcdcdc;
+            transition: color 0.3s;
+            font-size: 150%;
+        }
+        .nav a:hover {
+            color: #fecdff;
+            text-decoration: underline;
+        }
+        .hero-image {
+            background-color: #444;
+            height: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .hero-text {
+            text-align: center;
+            position: relative;
+            color: white;
+            padding: 30px;
+        }
+        .features {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            color: white;
+        }
+        .feature {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .feature h3 {
+            color: #fecdff;
+        }
+        #footer3 {
+            font-size: larger;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+        #footer3 a {
+            color: lightblue;
+            text-decoration: none;
+        }
+        #footer3 a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="site">
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Wie funktioniert der KI-Tutor?</h1>
+            <p>Entdecke, wie der KI-Tutor dir beim Lernen hilft und wie du das Beste aus dieser intelligenten Unterstützung herausholst!</p>
+        </div>
+    </div>
+
+    <section class="features">
+        <div class="feature">
+            <h3>1. Fragen stellen</h3>
+            <p>Der KI-Tutor ist immer bereit, Fragen zu verschiedensten Themen wie Mathematik, Naturwissenschaften, Informatik und mehr zu beantworten. Formuliere deine Frage, und der Tutor analysiert sie sofort.</p>
+        </div>
+        <div class="feature">
+            <h3>2. Echtzeit-Antworten</h3>
+            <p>Die KI verwendet modernste Sprachmodelle, die in Echtzeit präzise Antworten liefern. Egal, ob du eine Definition, eine Formel oder eine detaillierte Erklärung brauchst – die Antwort ist nur einen Klick entfernt.</p>
+        </div>
+        <div class="feature">
+            <h3>3. Schritt-für-Schritt-Hilfen</h3>
+            <p>Wenn du eine komplexe Aufgabe hast, unterstützt der KI-Tutor dich, indem er die Schritte zur Lösung erklärt. So verstehst du nicht nur das Ergebnis, sondern auch den Lösungsweg.</p>
+        </div>
+        <div class="feature">
+            <h3>4. Lernen nach deinem Tempo</h3>
+            <p>Der KI-Tutor ist jederzeit verfügbar und passt sich deinem Lerntempo an. Egal, ob du schnellere Antworten oder eine ausführlichere Erklärung möchtest – der Tutor ist flexibel und unterstützt dich individuell.</p>
+        </div>
+        <div class="feature">
+            <h3>5. Personalisierte Empfehlungen</h3>
+            <p>Basierend auf deinen Fragen und deinem Lernfortschritt kann der Tutor dir personalisierte Empfehlungen für weitere Ressourcen oder Übungsaufgaben geben.</p>
+        </div>
+    </section>
+
+    <div id="footer3">
+        <p><a href="/dataProt">Datenschutz</a></p>
+        <p><a href="/termsOfUse">Nutzungsbedingungen</a></p>
+        <p>Der KI-Tutor ist ein Projekt von 3HTL Waidhofen Schülern, um das Lernen für jeden zu erleichtern</p>
+    </div>
+</div>
+
+<div class="logo" style="z-index: 1000;">
+    <img src="Logo.png" alt="logo" style="height: 20%; margin-top: 2.4%; margin-left: -0.8%;">
+</div>
+
+<div class="nav">
+    <img src="goofy.png" alt="logo" style="clip-path: inset(5px 5px 5px 5px round 20px); width: 99%; border-radius: 10%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); margin-bottom: 1px;">
+    <a href="/tutor"><button style="font-size: 130%;">TutorBot</button></a>
+    <a href="/homepage">Homepage</a>
+    <a href="/help">Help</a>
+    <a href="/aboutUs">About Us</a>
+    <a href="/contact">Contact</a>
+</div>
+
+</body>
+</html>
